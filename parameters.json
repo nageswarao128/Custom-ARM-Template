@@ -1,0 +1,182 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "appserviceplanName": {
+      "value": "appserviceplannageswar128"
+    },
+    "appserviceplanSKU": {
+      "value": "Free"
+    },
+    "appserviceplanWorkerSize": {
+      "value": "0"
+    },
+    "sqldatabase128Name": {
+      "value": "sqldatabase128"
+    },
+    "sqldatabase128Collation": {
+      "value": "SQL_Latin1_General_CP1_CI_AS"
+    },
+    "sqldatabase128Edition": {
+      "value": "Basic"
+    },
+    "sqldatabase128RequestedServiceObjectiveName": {
+      "value": "Basic"
+    },
+    "sqlserver128AdminLogin": {
+      "value": "Nageswar"
+    },
+    "sqlserver128AdminLoginPassword": {
+      "value": "Nagesh@128"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "storageAccountName": {
+      "value": "storageaccount129"
+    },
+    "accountType": {
+      "value": "Standard_RAGRS"
+    },
+    "kind": {
+      "value": "StorageV2"
+    },
+    "accessTier": {
+      "value": "Hot"
+    },
+    "minimumTlsVersion": {
+      "value": "TLS1_2"
+    },
+    "supportsHttpsTrafficOnly": {
+      "value": true
+    },
+    "allowBlobPublicAccess": {
+      "value": true
+    },
+    "allowSharedKeyAccess": {
+      "value": true
+    },
+    "allowCrossTenantReplication": {
+      "value": true
+    },
+    "defaultOAuth": {
+      "value": false
+    },
+    "networkAclsBypass": {
+      "value": "AzureServices"
+    },
+    "networkAclsDefaultAction": {
+      "value": "Allow"
+    },
+    "isContainerRestoreEnabled": {
+      "value": false
+    },
+    "isBlobSoftDeleteEnabled": {
+      "value": true
+    },
+    "blobSoftDeleteRetentionDays": {
+      "value": 7
+    },
+    "isContainerSoftDeleteEnabled": {
+      "value": true
+    },
+    "containerSoftDeleteRetentionDays": {
+      "value": 7
+    },
+    "changeFeed": {
+      "value": false
+    },
+    "isVersioningEnabled": {
+      "value": false
+    },
+    "isShareSoftDeleteEnabled": {
+      "value": true
+    },
+    "shareSoftDeleteRetentionDays": {
+      "value": 7
+    },
+    "name": {
+      "value": "keysecretnag"
+    },
+    "sku": {
+      "value": "Standard"
+    },
+    "accessPolicies": {
+      "value": [
+        {
+          "objectId": "a7732d40-5180-4c3e-8670-1834dd71cf0a",
+          "tenantId": "73d3d213-f87a-4465-9a7e-67bd625fdf9c",
+          "permissions": {
+            "keys": [
+              "Get",
+              "List",
+              "Update",
+              "Create",
+              "Import",
+              "Delete",
+              "Recover",
+              "Backup",
+              "Restore"
+            ],
+            "secrets": [
+              "Get",
+              "List",
+              "Set",
+              "Delete",
+              "Recover",
+              "Backup",
+              "Restore"
+            ],
+            "certificates": [
+              "Get",
+              "List",
+              "Update",
+              "Create",
+              "Import",
+              "Delete",
+              "Recover",
+              "Backup",
+              "Restore",
+              "ManageContacts",
+              "ManageIssuers",
+              "GetIssuers",
+              "ListIssuers",
+              "SetIssuers",
+              "DeleteIssuers"
+            ]
+          },
+          "applicationId": ""
+        }
+      ]
+    },
+    "tenant": {
+      "value": "73d3d213-f87a-4465-9a7e-67bd625fdf9c"
+    },
+    "enabledForDeployment": {
+      "value": false
+    },
+    "enabledForTemplateDeployment": {
+      "value": false
+    },
+    "enabledForDiskEncryption": {
+      "value": false
+    },
+    "enableRbacAuthorization": {
+      "value": false
+    },
+    "enableSoftDelete": {
+      "value": true
+    },
+    "softDeleteRetentionInDays": {
+      "value": 90
+    },
+    "networkAcls": {
+      "value": {
+        "defaultAction": "allow",
+        "bypass": "AzureServices",
+        "ipRules": [],
+        "virtualNetworkRules": []
+      }
+    }
+  }
+}
